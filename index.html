@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form>
+      <label for="select">Choose a type of vihacle:</label>
+      <select id="selectId" name="vihacleList">
+        <option value="car">car</option>
+        <option value="truck">truck</option>
+        <option value="bus">bus</option>
+      </select>
+
+      <label for="pullyes">pullyes</label>
+      <input type="text" id="pullyes" name="pullyes" />
+      <label for="engine">engine</label>
+      <input type="text" id="engine" name="engine" />
+      <label for="color">color</label>
+      <input type="text" id="color" name="color" />
+      <label for="name">name</label>
+      <input type="text" id="nameC" name="name" />
+    </form>
+    <button id="buttonId">submit</button> -->
+
+    <div class="container">
+      <form
+        class="well form-horizontal"
+        action=" "
+        method="post"
+        id="contact_form"
+      >
+        <fieldset>
+          <!-- Form Name -->
+          <legend>
+            <center>
+              <h2><b>הוסף רכב</b></h2>
+            </center>
+          </legend>
+          <br />
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label">כלי תחבורה</label>
+            <div class="col-md-4 selectContainer">
+              <div class="input-group">
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-list"></i
+                ></span>
+                <select
+                  id="selectId"
+                  name="vihacleList"
+                  class="form-control selectpicker"
+                >
+                  <option value="">תבחר כלי רכב</option>
+                  <option value="car">רכב פרטי</option>
+                  <option value="truck">משאית</option>
+                  <option value="bus">אוטובוס</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label">גלגלים</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="pullyes"
+                  class="form-control"
+                  name="pullyes"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Text input-->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">מנוע</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <input
+                  id="engine"
+                  name="engine"
+                  class="form-control"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Text input-->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">צבע</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <input id="color" class="form-control" type="text" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Text input-->
+
+          <div class="form-group">
+            <label class="col-md-4 control-label">שם</label>
+            <div class="col-md-4 inputGroupContainer">
+              <div class="input-group">
+                <input id="nameC" class="form-control" type="text" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <button id="buttonId" onclick="buttonSub()" class="btn btn-warning">
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT
+      <span class="glyphicon glyphicon-send"></span
+      >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    </button>
+    <table id="tableId">
+      <tr>
+        <th>סוג רכב</th>
+        <th>גלגלים</th>
+        <th>מנוע</th>
+        <th>צבע</th>
+        <th>שם</th>
+      </tr>
+    </table>
+    <script src="main.js"></script>
+  </body>
+</html>
