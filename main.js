@@ -59,7 +59,7 @@ class Truck extends Vihacle {
     super(pulleys, engine, color);
     this.name = name;
   }
-  returnPropertiesPlus() {
+  returnPropertiesAndName() {
     return `name: ${this.name}, ${super.returnProperties}`;
   }
 }
@@ -69,7 +69,7 @@ class Bus extends Vihacle {
     super(pulleys, engine, color);
     this.name = name;
   }
-  returnPropertiesPlus() {
+  returnPropertiesAndName() {
     return `name: ${this.name}, ${super.returnProperties}`;
   }
 }
