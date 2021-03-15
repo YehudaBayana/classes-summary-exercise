@@ -20,7 +20,7 @@ class Vihacle {
   }
 
   returnProperties() {
-    return `pulleys: ${pulleys}, engine: ${engine}, color: ${color}`;
+    return `pulleys: ${this.pulleys}, engine: ${this.engine}, color: ${this.color}`;
   }
 
   static returnMaxEngine(obj1, obj2, obj3) {
@@ -44,7 +44,7 @@ class Car extends Vihacle {
   }
 
   returnPropertiesAndName() {
-    return `name: ${this.name}, ${super.returnProperties}`;
+    return `name: ${this.name}, ${super.returnProperties()}`;
   }
 }
 let car1 = new Car(12, 1200, 'red', 'mazda');
